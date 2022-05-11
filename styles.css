@@ -1,5 +1,95 @@
-*{
-  padding:0;
-  margin:0;
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font: 20px "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  background: #fcfcfc;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 10px #34495e;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+span{
+  font:40px "Indie Flower", cursive;
+}
+button {
+  border: none;
+  background-color: #1abc9c;
+  padding: 10px 18px;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  width:100%;
+
+}
+button:hover{
+  cursor:pointer;
+}
+input {
+  border: 1px dashed;
+  padding: 7px;
+  border-radius: 5px;
+  margin: 15px;
+  outline:none;
+  background: none;
+  width:100%;
+}
+
+.blue {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+::placeholder{
+  text-align: center;
+}
+
+
+.modal-container{
+  position: absolute;
+  right:50px;
+  bottom:40px;
+  width:300px;
+  height:100px;
+  border:1px solid #555;
+  padding:20px;
+  background-color: #e74c3c;
+  font-weight: bold;
+  display:flex;
+  align-items: center;
+  box-shadow: 2px 2px 2px #555;
+  display:none;
+}
+.close{
+  position: absolute;
+  top:0;
+  right:10px;
+  font-size: 40px;
+
+}
+
+.close:hover{
+  cursor:pointer;
 }
